@@ -1,0 +1,18 @@
+<?php
+
+$texts = [
+    __DIR__,
+    __DIR__."/../",
+    'C:\Users\pap\Desktop\pat\Services\composer.lock',
+    'tak',
+    'ptrak',
+    str_repeat("!@3dkupa", 100),
+];
+
+$hashes = [
+    "crc32",
+    "adler32",
+    "fnv132"
+];
+
+$benchmakrs = new HashBenchmarkContainer($hashes);
